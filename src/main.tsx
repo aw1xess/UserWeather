@@ -16,7 +16,7 @@ const router = createBrowserRouter([
 				element: <Home />,
 			},
 			{
-				path: "saved",
+				path: "/saved",
 				element: <SavedUsers />,
 			},
 		],
