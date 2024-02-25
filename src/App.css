@@ -1,10 +1,6 @@
 body {
 	font-family: "Open Sans";
-	height: 100%;
-}
-
-#root {
-	height: 100vh;
+	background: #f3f6ff;
 }
 
 .container {

@@ -9,7 +9,6 @@ import { WeatherData, requestWeather } from "./api/weatherAPI";
 import styled from "styled-components";
 import { TailSpin } from "react-loader-spinner";
 import { v4 as uuidv4 } from "uuid";
-import { theme } from "./theme";
 
 export type User = {
 	id: string;
@@ -21,11 +20,6 @@ export type User = {
 	city: string;
 	weather: WeatherData;
 };
-
-const Wrapper = styled.section`
-	background: ${theme.bg};
-	height: 100%;
-`;
 
 const Spinner = styled.div`
 	width: 100%;
@@ -115,7 +109,7 @@ const App = () => {
 	}, [weather]);
 
 	return (
-		<Wrapper>
+		<>
 			<Header />
 			<div className="container">
 				{data?.length && users?.length === weather?.length ? (
@@ -142,7 +136,7 @@ const App = () => {
 					</Spinner>
 				)}
 			</div>
-		</Wrapper>
+		</>
 	);
 };
 
