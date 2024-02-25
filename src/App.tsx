@@ -24,6 +24,7 @@ export type User = {
 
 const Wrapper = styled.section`
 	background: ${theme.bg};
+	height: 100%;
 `;
 
 const Spinner = styled.div`
