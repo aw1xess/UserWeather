@@ -16,6 +16,7 @@ const Cards = ({ data, saved }: { data: Array<User>; saved?: boolean }) => {
 	function saveUser(user: User) {
 		if (window.localStorage.getItem("savedUsers") !== null) {
 			const usersData = JSON.parse(
+				//@ts-expect-error local
 				window.localStorage.getItem("savedUsers")
 			);
 
@@ -43,6 +44,7 @@ const Cards = ({ data, saved }: { data: Array<User>; saved?: boolean }) => {
 	function removeUser(id: string) {
 		if (window.localStorage.getItem("savedUsers") !== null) {
 			const usersData = JSON.parse(
+				//@ts-expect-error local
 				window.localStorage.getItem("savedUsers")
 			);
 

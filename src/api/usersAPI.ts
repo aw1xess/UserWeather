@@ -20,7 +20,7 @@ type User = {
 };
 
 type Users = {
-	info: any;
+	info: unknown;
 	results: Array<User>;
 };
 
